@@ -22,6 +22,7 @@ namespace asp_araba_satis_sitesi_deneme
             DataList1.DataSource = dataReader;
 
             DataList1.DataBind();
+            dataReader.Close();
         }
     }
 }

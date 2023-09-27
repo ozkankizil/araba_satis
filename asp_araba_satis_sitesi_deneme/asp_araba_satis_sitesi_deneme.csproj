@@ -67,12 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="AddCarsPage.aspx" />
     <Content Include="CarList.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Web.config" />
     <Content Include="webform1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddCarsPage.aspx.cs">
       <DependentUpon>AddCarsPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -88,6 +97,13 @@
       <DependentUpon>CarList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Classes\SqlConnectionClass.cs" />
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
