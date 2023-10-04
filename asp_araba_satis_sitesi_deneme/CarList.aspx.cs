@@ -16,7 +16,7 @@ namespace asp_araba_satis_sitesi_deneme
             SqlCommand commandList = new SqlCommand("Select intCarID, strCarModel, intCarBrandID, intCarFuelType, strCarDescription, intCarContact, strCarSeller, strCarPhoto, intCarPrice, intStatus, intBrandID, strBrandName from TCars inner join TBrands on TCars.intCarBrandID=TBrands.intBrandID where intStatus=@pcon", SqlConnectionClass.connection);
             SqlConnectionClass.CheckConnection();
             commandList.Parameters.AddWithValue("@pcon", 1);
-
+            
             SqlDataReader dataReader= commandList.ExecuteReader();
 
             DataList1.DataSource = dataReader;
